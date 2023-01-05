@@ -55,7 +55,7 @@ def init_submodules(method = 'auto'):
   sha_version_ninja = '52649de2c56b63f42bc59513d51286531c595b44'
   github_repo_ninja = 'https://github.com/ninja-build/ninja'
   sha_version_mpp = '4cb6e3a05c15f49ffd346dc9f185ccc3459728b0'
-  github_repo_mpp = 'https://github.com/hypersonic-lab/Mutationpp'
+  github_repo_mpp = 'git@github.com:mutationpp/Mutationpp.git'
   sha_version_mel = '2484cd3258ef800a10e361016cb341834ee7930b'
   github_repo_mel = 'https://github.com/pcarruscag/MEL'
 
