@@ -11,7 +11,7 @@ The following steps need to be followed to build and install SU2-NEMO from sourc
 >>cd REPO
 
 3.	Git clone the SU2 repo using: 
->>git clone https://github.com/su2code/SU2.git
+>>git clone git@github.com:hypersonic-lab/SU2.git
 >>cd SU2
 
 4.	Load the Python and cmake modules and set compiler variables:
