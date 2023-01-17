@@ -14,6 +14,8 @@ The following steps need to be followed to build and install SU2-NEMO from sourc
 >>git clone git@github.com:hypersonic-lab/SU2.git
 >>cd SU2
 
+## Potentially will need to use git clone git@github.com:su2code/SU2.git
+
 4.	Load the Python and cmake modules and set compiler variables:
 >> module load python/3.9 cmake
 >> export CC=$(which gcc)
@@ -43,6 +45,9 @@ The following steps need to be followed to build and install SU2-NEMO from sourc
 
 10.	Add the following to the .bashrc file (as per the instructions at the end of build, excepting for LD_LIBRARY_PATH):
 
+## I think the full directory path will be needed so when sbatch is used, it can reference the correct location
+## ex. /home/u18/aaronml/REPO/SU2/SU2_Install/bin
+
 #*****************SU2****************************************
 export SU2_RUN=~/REPO/SU2/SU2_Install/bin
 export SU2_HOME=~/REPO/SU2
@@ -52,7 +57,6 @@ export PYTHONPATH=$PYTHONPATH:$SU2_RUN
 export MPP_DATA_DIRECTORY=$SU2_HOME/subprojects/Mutationpp/data
 export LD_LIBRARY_PATH=$SU2_HOME/install/usr/local/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=$SU2_HOME/build/subprojects/Mutationpp:$LD_LIBRARY_PATH
-
 
 
 
